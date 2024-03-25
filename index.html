@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="header">
+    <img class="img" src="images/IMG-20240216-WA0002.jpg" alt="">
+    </div>
+    <div class="container">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <a  class="close" onclick="closemenu()">CLOSE</a>
+        </ul>
+        <a  class="menu" onclick="openmenu()">MENU</a>
+        <div class="header_text">
+            <h1>Hi, I'm <span>Tendo</span><br>Jackline from Uganda</h1>
+        </div>
+    </div>
+   </div>
+   </div>
+   <!--ABOUT ME-->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img class="img2" src="images/IMG-20240207-WA0018.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tittle">About Me</h1>
+                <p>My name is Nakanjako Tendo Jackline, a ugandan from the central part of ugandan.<br>I am a twenty one year old
+                old undergraduate currently studying a bachelor's degree Information technology at Bugema Universty<br>in luweero district.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ol>
+                        <li><span>Networking</span><br>Website development</li>
+                        <li><span>Graphics design</span><br>Computer repair</li>
+                        <li><span>Photography</span><br>Programming using Python, C, JavaScript</li>
+                    </ol>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ol>
+                        <li><span>2023-Current</span><br>Still a student</li>
+                    </ol>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ol>
+                        <li><span>2023-Current</span><br>Bachelor's degree in Information Technology</li>
+                        <li><span>2019-2022</span><br>Uganda Advanced Certificate of Education</li>
+                        <li><span>2016-2019</span><br>Uganda Certificate of Education</li>
+                        <li><span>2007-2015</span><br>Primary Leaving Exams</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+   <!--services-->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Website development</h2>
+                <p>This involves designing websites for any organization so as to advertise their products to the people</p>
+                <a href="word/website.docx">Learn more</a>
+            </div>
+            <div>
+                <h2>Programming</h2>
+                <p>This involves developing systems using Programming langauges like Python and C </p>
+                <a href="word/programming.docx">Learn more</a>
+            </div>
+            <div>
+                <h2>Graphics design</h2>
+                <p>This involves designing Graphical documents forexample posters, business cards, flyers and many others </p>
+                <a href="word/graphics.docx">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!--- portfolio--->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img class="logo4" src="images/logo.png" alt="">
+                <div class="layer">
+                    <h3>logos</h3>
+                    <p>I make logos for companies, schools, organization and may more other things</p>
+                </div>
+            </div>
+            <div class="work">
+                <img class="untitled-6" src="images/Untitled-6.png" alt="">
+                <div class="layer">
+                    <h3>Posters</h3>
+                    <p>I make posters for celebrations, advertisement and may more other things</p>
+                </div>
+            </div>
+            <div class="work">
+                <img class="Untitled-1" src="images/business card one true.png" alt="">
+                <div class="layer">
+                    <h3>Business cards</h3>
+                    <p>I make Business cards for companies, organizations, people and may more other things</p>
+                </div>
+            </div>
+        </div>
+        <a href="multimedia" class="btn">See more</a>
+    </div>
+   </div>
+   <!-----contacts----->
+   <div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>ntendo4343@gmail.com</p>
+                <p>0755087665</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><img class="icon" src="images/facebook.jpg" alt=""></a>
+                    <a href="https://instagram.com/"><img class="icon" src="images/instagram.jpg" alt=""></a>
+                    <a href="https://twitter.com/"><img class="icon" src="images/twitter.png" alt=""></a>
+                    <a href="https://whatsapp.com/"><img class="icon" src="images/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <a href="word/CV.docx" download  class="btn btn2">Download CV</a>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+                    <h1></h1>
+                </span>
+            </div>
+           
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="copyright">
+        <p>Copyright @ Tendo. Made with by Easy Tutorials</p>
+    </div>
+   </div>
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+   </script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.left = "0";
+    }
+    function closemenu(){
+        sidemenu.style.left = "-200px";
+    }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTRMPu2x_YW7ajpp9d3DUETVv1Ha5_0UNArN1lNy38LAc65UVMHhS-pqYG3uTe5_kc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = "message sent successfully"
+            })
+            form.reset()
+        })
+        .catch(error => console.error('error!', error.message))
+    })
+        
+  </script>
+</body>
+</html> 
