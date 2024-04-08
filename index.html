@@ -20,7 +20,7 @@
             <li><a href="#contacts">Contacts</a></li>
             <a  class="close" onclick="closemenu()">CLOSE</a>
         </ul>
-        <a  class="menu" onclick="openmenu()">MENU</a>
+        <a  class="menu" onclick="openmenu()">menu</a>
         <div class="header_text">
             <h1>Hi, I'm <span>Tendo</span><br>Jackline from Uganda</h1>
         </div>
@@ -37,7 +37,7 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>My name is Nakanjako Tendo Jackline, a ugandan from the central part of ugandan.<br>I am a twenty one year old
-                old undergraduate currently studying a bachelor's degree Information technology at Bugema Universty<br>in luweero district.</p>
+                old undergraduate currently studying a bachelor's degree Information technology at Bugema Universty in luweero district.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -170,17 +170,17 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
+    };
     
    </script>
    <script>
     var sidemenu = document.getElementById("sidemenu")
     function openmenu(){
         sidemenu.style.left = "0";
-    }
+    };
     function closemenu(){
         sidemenu.style.left = "-200px";
-    }
+    };
    </script>
    <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzTRMPu2x_YW7ajpp9d3DUETVv1Ha5_0UNArN1lNy38LAc65UVMHhS-pqYG3uTe5_kc/exec'
@@ -193,12 +193,12 @@
         .then(response =>  {
             msg.innerHTML = "Message sent successfully"
             setTimeout(function(){
-                msg.innerHTML = "message sent successfully"
-            })
+                msg.innerHTML = ""
+            },5000)
             form.reset()
         })
         .catch(error => console.error('error!', error.message))
-    })
+    });
         
   </script>
 </body>
